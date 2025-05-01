@@ -205,11 +205,11 @@ nav h1 a {
   padding: 0 42px 44px;
 }
 .services ul li:hover{
-   box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
 }
 
 .destinations{
-  margin-bottom:186px ;
+  margin-bottom: 186px;  
 }
 
 .destinations h3{
@@ -224,8 +224,7 @@ nav h1 a {
   justify-content: space-between;
   margin-left: 39px;
   padding-right: 77px;
-  background: url(../images/top_destination_bg.svg) no-repeat;
-  background-position:calc(100% - 30px) calc(100% - 47px) ;
+  background: no-repeat url(../images/top_destination_bg.svg) 1006px 158px;
 }
 .destinations ul li{
   width: 315px;
@@ -244,7 +243,7 @@ nav h1 a {
 }
 .destinations ul li figure img{
   width: 100%;
-  border-radius: 24px;
+  border-radius:24px;
 }
 .destinations ul li figure h4{
   display: flex;
@@ -252,11 +251,9 @@ nav h1 a {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.245;
-  color: #5e6282;
+  color: #5E6282;
   margin-bottom: 19px;
-
 }
-
 .destinations ul li figure p{
   display: flex;
   gap: 15px;
@@ -264,8 +261,205 @@ nav h1 a {
   font-size: 16px;
   font-weight: 600;
   line-height: 1.245;
-  color: #5e6282;
+  color: #5E6282;
 }
 .destinations ul li figure p svg{
   color:#000;
+}
+
+/* book_a_trip */
+.book_a_trip{
+  display: flex;
+  gap:118px;
+  background: no-repeat url(../images/book_bg.svg) right top;
+  padding-bottom: 200px;
+}
+.book_a_trip .content{
+  width: 511px;
+}
+.book_a_trip .section-sub-tt,
+.book_a_trip .section-tt {
+  text-align:left;
+}
+.book_a_trip .section-tt{
+  margin-bottom: 31px;
+}
+.book_a_trip ol{
+  display: flex;
+  gap:48px;
+  flex-direction: column;
+}
+.book_a_trip ol li{
+  display: flex;
+  gap:21px;
+  align-items: flex-start;
+}
+.book_a_trip ol li img{
+  width: 47px;
+  height: 48px;
+  padding: 13px;
+  border-radius:13px;  
+  box-sizing: border-box;
+}
+.book_a_trip ol li .desc{
+  width: 327px;
+}
+.book_a_trip ol li:nth-child(1) img{
+  background: #F0BB1F;
+}
+.book_a_trip ol li:nth-child(2) img{
+  background: #F15A2B;
+}
+.book_a_trip ol li:nth-child(3) img{
+  background: #006380;
+}
+.book_a_trip ol li .desc h3{
+  font-weight: bold;
+  line-height: 20px;
+  margin-bottom: 4px;
+}
+.pic_of_month {
+  margin-top: 78px; 
+  position: relative;
+}
+.pic_of_month .details{
+  width: 370px;
+  background: #fff;
+  padding: 20px 24px 30px;
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: var(--shadow);
+  transform: translateX(-50px);
+  opacity: 0;
+  transition:0.3s;
+}
+.active .pic_of_month .details{
+  transform: translateX(0);
+  opacity: 1;
+}
+.pic_of_month .details img{
+  margin-bottom: 26px;
+}
+.pic_of_month .details h4{
+  font-size: 18px;
+  line-height: 22px;
+  color: #080809;
+  letter-spacing: 0.015em;
+  margin-bottom:13px;
+}
+.pic_of_month .details p{
+  line-height: 20px;
+  color: #84829A;
+  letter-spacing: -0.005em;
+  margin-bottom:21px;
+}
+.pic_of_month .details p span{
+  position: relative;
+  margin-right: 16px;
+}
+.pic_of_month .details p span:after{
+  content:'';
+  position: absolute;
+  height: 16px;
+  border-right:1px solid #84829A;
+  bottom: 3px;
+  right: -3px;
+}
+
+.pic_of_month .icons{
+  display: flex;
+  gap:16px;
+  margin-left: 3px;
+  margin-bottom: 30px;
+}
+.pic_of_month .icons a{
+  width: 36px;
+  height: 36px;
+  background: #F5F5F5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:50%;
+  color: #84829A;
+  font-size: 14px;
+}
+.pic_of_month .people{
+  display: flex;
+  gap:15px;
+  align-items: center;
+  color:#84829A;
+  font-weight: 600;
+}
+.pic_of_month .details .wish{
+  position: absolute;
+  right: 26px;
+  bottom: 33px;  
+  color: #4152CA;
+  font-size: 18px;
+}
+.pic_of_month .details .wish svg:last-child{
+  display: none;
+}
+.pic_of_month .ongoing{
+  position: absolute;
+  right: -104px;
+  bottom: 55px;
+  background: #fff;
+  padding: 19px 12px 21px 33px;
+  display: flex;
+  align-items: flex-start;
+  gap:12px;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  transform:translateX(50px);
+  opacity: 0;
+  transition:0.3s;
+}
+.active .pic_of_month .ongoing{
+  transform:translateX(0);
+  opacity: 1;
+}
+.pic_of_month .ongoing h5{
+  font-size: 14px;
+  line-height: 17px;
+  color: #84829A;
+  margin-bottom: 6px;
+  letter-spacing: -0.035em;
+  font-weight: 600;
+}
+.pic_of_month .ongoing h4{
+  font-size: 18px;
+  line-height: 22px;
+  color: #080809;
+  letter-spacing: -0.015em;
+  margin-bottom: 14px;
+}
+
+.pic_of_month .ongoing p{
+  font-size: 14px;
+  line-height: 17px;
+  color: #080809;
+  letter-spacing: -0.055em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.pic_of_month .ongoing p span{
+  color: #8A79DF;
+}
+.progress_bar {
+  width: 156px;
+  height: 5px;
+  border-radius:2.5px;
+  background: #F5F5F5;
+  position: relative
+}
+.progress_bar .bar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #8A79DF;
+  border-radius:2.5px;
+  transition:0.3s;
 }
